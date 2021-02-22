@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "51695903936",
+    "firebase_url": "https://infra-457da-default-rtdb.firebaseio.com",
+    "project_id": "infra-457da",
+    "storage_bucket": "infra-457da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51695903936:android:f566cb045d79acfd64b925",
+        "android_client_info": {
+          "package_name": "com.example.health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51695903936-knp40uvjlm1jehrfdo4gd5qfttbqk8dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKOy373WdVn6OLu1VlxzWqfEp-NiOjAxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51695903936-knp40uvjlm1jehrfdo4gd5qfttbqk8dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
