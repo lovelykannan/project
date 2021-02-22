@@ -23,6 +23,25 @@ LIFE = db.child("users").get()
 to=[]
 for i in LIFE:
     to.append(i.val())
+    while True:
+    unix=int(time.time())
+    time1=str(datetime.datetime.fromtimestamp(unix).strftime("%I:%M:%S:%p"))
+    if time1=='12:04:00:PM':
+        import smtplib
+        gmailaddress = 'kannan17999@gmail.com'
+        gmailpassword = 'kannan28170188'
+        mailto = 'lskkannan1999@gmail.com'
+        SUBJECT='Todays present'
+        message = 'Subject: {}\n\n{}'.format(SUBJECT, msg)
+        mailServer = smtplib.SMTP('smtp.gmail.com' , 587)
+        mailServer.starttls()
+        mailServer.login(gmailaddress , gmailpassword)
+        mailServer.sendmail(gmailaddress, mailto , message)
+        print(" \n Sent!")
+        mailServer.quit()
+
+
+
 
 
 @app.route('/',methods=['GET','POST'])
