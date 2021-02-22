@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  font-family: sans-serif; /* Change your font family */
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 1550px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+
+
+}
+
+body  {
+
+  background-color: #adad85;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+
+  font-size: 13px;
+  color: white;
+}
+}
+
+.login input[type=submit]{
+
+	background:#009879;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 4px;
+	position: absolute;
+	top: calc(20% - 90px);
+	left: calc(98% - 50px);
+	padding: 10px;
+	z-index: 2;
+
+}
+.login input[type=submit]{
+
+	background:#009879;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 4px;
+	position: absolute;
+	top: calc(20% - 90px);
+	left: calc(98% - 50px);
+	padding: 10px;
+	z-index: 2;
+}
+.login input[type=button]{
+
+	background: #009879;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 4px;
+	position: absolute;
+	top: calc(13% - 90px);
+	left: calc(95% - 50px);
+	padding: 10px;
+	z-index: 2;
+	}
+	.logo input[type=button]{
+
+	background: #009879;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 4px;
+	position: absolute;
+	top: calc(95% - 90px);
+	left: calc(97% - 50px);
+	padding: 10px;
+	z-index: 2;
+</style>
+</head>
+<body>
+
+<header>
+  <form method="oper" action="/">
+  <h2>Employee Details</h2>
+  <div class="login" >
+       <a href="loginform.html/"><input type="submit"name="logout" class="btn" value="logout"></a>
+       <a href="page2.html"><input type="button"name="page2" class="btn" value="Medical Records"></a>
+      </div>
+    <div class="logo">
+      <a href="page2.html"><input type="button"name="page" class="btn" value="Any Help?"></a>
+    </div>
+
+
+  </form>
+</header>
+<table class="content-table">
+  <thead>
+    <tr>
+      <th>Secret ID</th>
+      <th>Name</th>
+      <th>Emai ID</th>
+      <th>HeartRate</th>
+      <th>SPO2</th>
+      <th>Temperature</th>
+      <th>Blood Pressure</th>
+      <th>Health Status</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {% for row in t %}
+      <td>{{row}}</td>
+      {% endfor %}
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+
