@@ -1,5 +1,0 @@
-mysql_host: 'mysqlwebap.mysql.database.azure.com'
-mysql_user: 'mysql2817@mysqlwebap'
-# Enter your password in field below
-mysql_password: 'kannan2817*'
-mysql_db: 'webapp'
